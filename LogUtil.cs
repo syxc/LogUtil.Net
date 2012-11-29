@@ -61,7 +61,7 @@ namespace syxc.helper
 
                 msg = new StringBuilder().Append("\r\n")
                         .Append(GetDateformat(Dateformat.yyyyMMddHHmmss))
-                        .Append(logMap[type]).Append(tag)
+                        .Append(logMap[type]).Append(tag).Append(" ")
                         .Append(msg).ToString();
 
                 string fileName = new StringBuilder()
