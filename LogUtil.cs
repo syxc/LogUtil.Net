@@ -20,19 +20,19 @@ namespace syxc.helper
                 switch (type)
                 {
                     case LogType.VERBOSE:
-                        Log.v(tag, msg);
+                        Log.V(tag, msg);
                         break;
                     case LogType.DEBUG:
-                        Log.d(tag, msg);
+                        Log.D(tag, msg);
                         break;
                     case LogType.INFO:
-                        Log.i(tag, msg);
+                        Log.I(tag, msg);
                         break;
                     case LogType.WARN:
-                        Log.w(tag, msg);
+                        Log.W(tag, msg);
                         break;
                     case LogType.ERROR:
-                        Log.e(tag, msg);
+                        Log.E(tag, msg);
                         break;
                 }
             }
@@ -148,27 +148,27 @@ namespace syxc.helper
 
     public class Log
     {
-        public static void v(string tag, string msg)
+        public static void V(string tag, string msg)
         {
             Console.WriteLine(" {0} {1} {2}", "VERBOSE", tag, msg);
         }
 
-        public static void d(string tag, string msg)
+        public static void D(string tag, string msg)
         {
             Console.WriteLine(" {0} {1} {2}", "DEBUG", tag, msg);
         }
 
-        public static void i(string tag, string msg)
+        public static void I(string tag, string msg)
         {
             Console.WriteLine(" {0} {1} {2}", "INFO", tag, msg);
         }
 
-        public static void w(string tag, string msg)
+        public static void W(string tag, string msg)
         {
             Console.WriteLine(" {0} {1} {2}", "WARN", tag, msg);
         }
 
-        public static void e(string tag, string msg)
+        public static void E(string tag, string msg)
         {
             Console.WriteLine(" {0} {1} {2}", "ERROR", tag, msg);
         }
