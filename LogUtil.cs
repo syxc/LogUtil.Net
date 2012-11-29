@@ -105,7 +105,7 @@ namespace syxc.helper
             }
         }
 
-        public static string GetEnumValue(Enum value)
+        private static string GetEnumValue(Enum value)
         {
             FieldInfo fi = value.GetType().GetField(value.ToString());
             DescriptionAttribute[] attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
